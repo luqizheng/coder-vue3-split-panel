@@ -169,7 +169,7 @@ This library uses [Split.js](https://github.com/nathancahill/Split.js). These fe
 
 | <img src="http://i.imgur.com/dJC1GUv.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/8h3iz5H.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/iQV4nmJ.png" width="48px" height="48px" alt="Opera logo"> | <img src="http://i.imgur.com/j3tgNKJ.png" width="48px" height="48px" alt="Safari logo"> | [<img src="http://i.imgur.com/70as3qf.png" height="48px" alt="BrowserStack logo">](http://browserstack.com/) |
 |:---:|:---:|:---:|:---:|:---:|:----|
-| 22+ ✔ | 6+ ✔ | 9+ ✔ | 15+ ✔ | 6.2+ ✔ | Sponsored ✔ |
+| 22+ ? | 6+ ? | 9+ ? | 15+ ? | 6.2+ ? | Sponsored ? |
 
 ## Built With
 
@@ -178,4 +178,6 @@ This library uses [Split.js](https://github.com/nathancahill/Split.js). These fe
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/bajaniyarohit/vue-split-panel/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/bajaniyarohit/vue-split-panel/blob/master/LICENSE) file for detailsVue3 wrapper for the great Split.js library. base on project https://github.com/bajaniyarohit/vue-split-panel
+
+
