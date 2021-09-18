@@ -6,7 +6,7 @@
 
 <script lang="ts">
 //import Emitter from "../mixins/emitter";
-
+import { getCurrentInstance } from "vue";
 export default {
   name: "SplitArea",
   //mixins: [Emitter],
@@ -21,16 +21,10 @@ export default {
     },
   },
   computed: {
-    classes() {
-      return `split split-` + (this.$parent?.$props.direction || "horizontal");
-    },
-  },
-  watch: {
-    size() {
-      // this.$parent.changeAreaSize();
-    },
-    minSize() {
-      // this.$parent.changeAreaSize();
+    classes(): string {
+      var parent = getCurrentInstance()?.parent;
+      var a = parent?.props;
+      return `split split-` + a?.direction;
     },
   },
 };

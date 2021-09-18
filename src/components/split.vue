@@ -6,7 +6,14 @@
 
 <script lang="ts">
 import Split from "split.js";
-import { defineComponent, ref, onMounted, SetupContext, VNode } from "vue";
+import {
+  defineComponent,
+  ref,
+  onMounted,
+  SetupContext,
+  VNode,
+  
+} from "vue";
 interface IDataContainer {
   instance: Split.Instance | null;
   elements: Array<any> | undefined;
@@ -20,6 +27,7 @@ export default defineComponent({
     direction: { type: String, default: "horizontal" },
     gutterSize: { type: Number, default: 8 },
   },
+
   setup(props, ctx: SetupContext) {
     const parent = ref(null);
     var dataVal = {
@@ -28,8 +36,9 @@ export default defineComponent({
       minSizes: new Array<number>(),
       instance: null,
     };
-    const data = ref(dataVal as IDataContainer);
 
+    const data = ref(dataVal as IDataContainer);
+  
     const init = () => {
       if (data.value.instance !== null) {
         data.value.instance?.destroy();
@@ -52,7 +61,7 @@ export default defineComponent({
           ctx.emit("onDragEnd", data.value.instance?.getSizes());
         },
       };
-      console.log(splitOptions);
+    
       data.value.instance = Split(
         data.value.elements ?? [],
         splitOptions as Split.Options
@@ -94,7 +103,7 @@ export default defineComponent({
       init();
     };
     const getSizes = () => {
-      return data.value.instance?.getSizes() ||0;
+      return data.value.instance?.getSizes() || 0;
     };
 
     return { data, init, parent, reset, getSizes };
