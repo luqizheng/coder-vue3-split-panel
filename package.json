@@ -1,9 +1,24 @@
 {
   "name": "vue3-split-panel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "src/index",
-  "description": "base ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luqizheng/vue3-split-panel"
+  },"keywords": [
+    "split.js",
+    "split",
+    "panel",
+    "pan",
+    "horizantal",
+    "vertical",
+    "vue"
+  ], 
+  "homepage": "https://github.com/luqizheng/vue3-split-panel#readme",
+  "author": "luqizheng",
+  "license": "MIT",
+  "description": "Vue3 split-panel component and wrapp split.js ",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
