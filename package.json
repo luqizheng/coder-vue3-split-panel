@@ -1,46 +1,30 @@
 {
   "name": "vue3-split-panel",
-  "version": "0.1.2",
-  "private": false,
-  "main": "src/index",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luqizheng/vue3-split-panel"
-  },"keywords": [
-    "split.js",
-    "split",
-    "panel",
-    "pan",
-    "horizantal",
-    "vertical",
-    "vue"
-  ], 
-  "homepage": "https://github.com/luqizheng/vue3-split-panel#readme",
-  "author": "luqizheng",
-  "license": "MIT",
-  "description": "Vue3 split-panel component and wrapp split.js ",
+  "version": "0.1.4",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue3-split-panel.umd.js",
+  "module": "./dist/vue3-split-panel.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-split-panel.es.js",
+      "require": "./dist/vue3-split-panel.umd.js"
+    }
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
     "split.js": "^1.6.4",
-    "vue": "^3.0.0"
+    "vue": "^3.2.16"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "naive-ui": "^2.18.2",
-    "typescript": "~4.1.5"
+    "@vitejs/plugin-vue": "^1.9.3",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue-tsc": "^0.3.0"
   }
 }

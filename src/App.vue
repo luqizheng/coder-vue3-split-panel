@@ -58,7 +58,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Split from "split.js";
+
 export default defineComponent({
   name: "App",
 
@@ -71,12 +71,6 @@ export default defineComponent({
   methods: {
     onDragEnd(size: number) {
       console.log("onDragEnd", size);
-    },
-    Reset() {
-      Split(["#one", "#two"], {
-        sizes: [25, 75],
-        minSize: 200,
-      });
     },
   },
 });
