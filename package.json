@@ -1,6 +1,6 @@
 {
   "name": "vue3-split-panel",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "files": [
     "dist"
   ],
@@ -10,7 +10,8 @@
     ".": {
       "import": "./dist/vue3-split-panel.es.js",
       "require": "./dist/vue3-split-panel.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
