@@ -1,6 +1,6 @@
 {
   "name": "coder-vue3-split-panel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "dist"
   ],
@@ -13,6 +13,10 @@
       "require": "./dist/vue3-split-panel.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
+  },
+  "repository": {
+    "type": "url",
+    "url": "https://github.com/luqizheng/coder-vue3-split-panel"
   },
   "scripts": {
     "dev": "vite",
