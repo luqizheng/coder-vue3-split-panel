@@ -4,6 +4,7 @@
   "files": [
     "dist"
   ],
+  "types": "./lib/index.d.ts",
   "main": "./dist/vue3-split-panel.umd.js",
   "module": "./dist/vue3-split-panel.es.js",
   "exports": {
