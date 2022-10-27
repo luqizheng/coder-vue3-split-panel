@@ -111,7 +111,7 @@ export default defineComponent({
 });
 </script>
 
- <style>
+ <style >
 .split {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

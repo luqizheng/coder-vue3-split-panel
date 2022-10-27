@@ -1,6 +1,6 @@
 {
-  "name": "vue3-split-panel",
-  "version": "0.2.1",
+  "name": "coder-vue3-split-panel",
+  "version": "1.0.0",
   "files": [
     "dist"
   ],
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && vue-tsc --declaration --emitDeclarationOnly",
     "serve": "vite preview"
   },
   "dependencies": {
